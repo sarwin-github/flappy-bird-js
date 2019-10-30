@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Original Flappy Bird -JavaScript</title>
+    <link href="https://fonts.googleapis.com/css?family=Teko:700" rel="stylesheet">
+    <style>        
+        canvas{
+            border: 1px solid #000;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bird" width="350" height="530"></canvas>
+    <img id="img-object" src="img/sprite.png" style="display: none">
+
+    <audio id="audio-score" src="audio/sfx_point.wav" controls style="display: none"></audio>
+    <audio id="audio-flap" src="audio/sfx_flap.wav" controls style="display: none"></audio>
+    <audio id="audio-hit" src="audio/sfx_hit.wav" controls style="display: none"></audio>
+	<audio id="audio-swoosh" src="audio/sfx_swooshing.wav" controls style="display: none"></audio>
+	<audio id="audio-die" src="audio/sfx_die.wav" controls style="display: none"></audio>
+
+    <script src="game.js"></script>
+</body>
+</html>
