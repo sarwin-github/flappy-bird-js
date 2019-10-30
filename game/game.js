@@ -14,13 +14,6 @@ const ctx = cvs.getContext("2d");
 // LOAD SPRITE IMAGE
 const sprite = document.getElementById("img-object");
 
-// LOAD SOUNDS
-const SCORE_S = document.getElementById("audio-score");
-const FLAP    = document.getElementById("audio-flap");
-const HIT     = document.getElementById("audio-hit");
-const SWOOSHING = document.getElementById("audio-swoosh");
-const DIE     = document.getElementById("audio-die");
-
 let frames = 0;
 
 // GAME STATE
