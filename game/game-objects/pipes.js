@@ -7,7 +7,6 @@ let frames    = 0;
 
 export default class Pipes{
 	constructor(ctx, cvs, sprite, state, bird, score){
-        console.log(frames)
 		this.ctx = ctx;
 		this.sprite = sprite;
 		this.state = state;

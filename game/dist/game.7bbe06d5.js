@@ -447,7 +447,6 @@ function () {
   function Pipes(ctx, cvs, sprite, state, bird, score) {
     _classCallCheck(this, Pipes);
 
-    console.log(frames);
     this.ctx = ctx;
     this.sprite = sprite;
     this.state = state;
@@ -680,13 +679,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var cvs = document.getElementById("bird");
 var ctx = cvs.getContext("2d"); // LOAD SPRITE IMAGE
 
-var sprite = document.getElementById("img-object"); // LOAD SOUNDS
-
-var SCORE_S = document.getElementById("audio-score");
-var FLAP = document.getElementById("audio-flap");
-var HIT = document.getElementById("audio-hit");
-var SWOOSHING = document.getElementById("audio-swoosh");
-var DIE = document.getElementById("audio-die");
+var sprite = document.getElementById("img-object");
 var frames = 0; // GAME STATE
 
 var state = {
@@ -758,7 +751,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55340" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51879" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
